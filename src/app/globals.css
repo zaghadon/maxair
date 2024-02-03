@@ -16,7 +16,26 @@
   }
 }
 
-body {
+/* @font-face {
+  font-family: 'HarmonyOS_Sans_SC';
+  src: url('../assets/fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Thin.ttf');
+  font-weight: 300;
+  font-style: thin;
+  } */
+
+  /* @font-face {
+  font-family: 'HarmonyOS Sans SC';
+  src: url('../assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Black.ttf');
+  src: url('../assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Bold.ttf');
+  src: url('../assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Light.ttf');
+  src: url('../assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Medium.ttf');
+  src: url('../assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf');
+  src: url('../assets/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Thin.ttf');
+  font-weight: 400;
+  font-style: normal, thin, bold, black, light, regular, medium;
+  } */
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +43,30 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.menu-item {
+  @apply h-[34px] px-3.5 py-2.5 font-harmos font-thin text-xs text-white leading-[14.02px]
+}
+
+.intro {
+  background-image: url('../assets/images/20230708153356818.png');
+  background-position: center;
+}
+
+.menu-cta{
+  @apply flex h-9 pr-2.5 text-white items-center text-center justify-center
+}
+
+.ftm-list {
+  @apply flex flex-col gap-[21px]
+}
+.ftm-list > li {
+  @apply text-[14px] leading-[16.41px]
 }
